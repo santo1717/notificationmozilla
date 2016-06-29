@@ -229,7 +229,7 @@ function postSubscribeObj(statusType, name, endpoint, key) {
     // to send push messages
     var request = new XMLHttpRequest();
 
-    request.open('POST', 'http://192.168.59.94/faces/index.jsp');
+    request.open('POST', 'https://rawgit.com/santo1717/notificationmozilla/master/server.html');
     request.setRequestHeader('Content-Type', 'application/json');
     
     var subscribeObj = {
@@ -310,7 +310,7 @@ function sendChatMessage(chatMsg) {
       // and the associated push subscription 
       var request = new XMLHttpRequest();
 
-      request.open('POST', 'http://192.168.59.94/faces/index.jsp');
+      request.open('POST', 'https://rawgit.com/santo1717/notificationmozilla/master/server.html');
       request.setRequestHeader('Content-Type', 'application/json');
     
       var messageObj = {
